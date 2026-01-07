@@ -6,7 +6,7 @@ module "ec2" {
   instance_name   = "germany-instance"
   source          = "../../../ec2-instance"
   ami             = "ami-06c431709bcd3b51d"
-  instance_type   = "t2.small"
+  instance_type   = "t3.small"
   environment     = "staging"
   allowed_ports   = [22, 80, 443]
   region          = "eu-central-1"  
