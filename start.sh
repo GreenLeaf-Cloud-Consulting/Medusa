@@ -7,5 +7,8 @@ npx medusa db:migrate
 echo "Seeding database..."
 npm run seed || echo "Seeding failed, continuing..."
 
-echo "Starting Medusa development server..."
-npm run dev
+echo "Building Medusa for production..."
+npm run build
+
+echo "Starting Medusa production server..."
+npm run start
